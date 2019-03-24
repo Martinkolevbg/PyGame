@@ -3,7 +3,8 @@
     "python.formatting.provider": "yapf",
     "python.pythonPath": "C:\\Python27\\python.exe",
     "python.autoComplete.extraPaths": [
-        "${workspaceRoot}/game"
+        "${workspaceRoot}/game",
+        "${workspaceRoot}/flask"
     ],
     "python.linting.mypyEnabled": false,
     "python.linting.pylintEnabled": true,
