@@ -19,7 +19,7 @@ def main():
         screen.blit(fps, (50, 50))
         pg.display.flip()
         # Important to call 'tick' only once per frame https://stackoverflow.com/a/35620064
-        clock.tick(60)
+        clock.tick(144)
 
     pg.quit()
     sys.exit()

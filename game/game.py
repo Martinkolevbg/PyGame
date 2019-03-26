@@ -34,8 +34,8 @@ clock = pygame.time.Clock()
 bulletSound = pygame.mixer.Sound('bullet.wav')
 hitSound = pygame.mixer.Sound('hit.wav')
 
-music = pygame.mixer.music.load('game/images/music.mp3')
-pygame.mixer.music.play(-1)
+# music = pygame.mixer.music.load('game/images/music.mp3')
+# pygame.mixer.music.play(-1)
 
 score = 0
 
@@ -104,7 +104,8 @@ class projectile(object):
         self.vel = 8 * facing
 
     def draw(self, win):
-        pygame.draw.circle(win, self.color, (self.x, self.y), self.radius)
+        pygame.draw.circle(win, self.color, (int(self.x), int(self.y)),
+                           self.radius)
 
 
 class enemy(object):
@@ -188,7 +189,7 @@ class enemy(object):
             self.health -= 1
         else:
             self.visible = False
-        print('hit')
+        # print('hit')
 
 
 def redrawGameWindow():
