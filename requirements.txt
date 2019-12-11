@@ -17,6 +17,6 @@ pylint==1.9.4
 singledispatch==3.4.0.3
 six==1.12.0
 thorpy==1.6.1
-Werkzeug==0.15.1
+Werkzeug==0.15.3
 wrapt==1.11.1
 yapf==0.26.0
